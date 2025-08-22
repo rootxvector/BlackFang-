@@ -58,8 +58,8 @@ nmap, gobuster / dirb, wpscan, nikto, skipfish, maltego
 
 🔧 Installation
 
-git clone https://github.com/rootxvector/BlackFang-.git
-cd BlackFang-
+git clone https://github.com/rootxvector/BlackFang.git
+cd BlackFang
 python3 blackfang.py
 
 
