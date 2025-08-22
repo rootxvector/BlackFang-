@@ -1,52 +1,69 @@
-🐺 BlackFang Recon
+🐺 BlackFang Recon – OSINT & Security Scanner
 
-Local OSINT & Security Scanner
 
-BlackFang Recon is a modular reconnaissance toolkit for penetration testers, red teamers, and OSINT researchers. It provides an interactive CLI to run common recon modules safely and quickly.
 
-Developer: rootxvector
-Follow: Instagram — @rootxvector
+
+
+BlackFang Recon is a modular reconnaissance toolkit for penetration testers, red teamers, and OSINT researchers. It provides an interactive CLI to run reconnaissance and scanning modules safely and quickly.
+
+> ⚠️ Disclaimer: This project is for educational and authorized testing purposes only. Unauthorized use may violate laws. Use responsibly.
+
+
+
+
+---
 
 ✨ Features
 
-DNS records enumeration
+✅ DNS Records Enumeration
 
-WHOIS lookup
+✅ WHOIS Lookup
 
-HTTP headers inspection
+✅ HTTP Headers Inspection
 
-TLS/SSL snapshot & certificate analysis
+✅ TLS/SSL Snapshot & Certificate Analysis
 
-Safe port scanning (nmap, rate-limited)
+✅ Safe Port Scanning (nmap, rate-limited)
 
-Subdomain discovery
+✅ Subdomain Discovery
 
-Directory brute force (Gobuster/Dirb)
+✅ Directory Bruteforce (Gobuster/Dirb)
 
-WordPress enumeration (WPScan)
+✅ WordPress Enumeration (WPScan)
 
-Web vulnerability scanners (Nikto, Skipfish)
+✅ Web Vulnerability Scanners (Nikto, Skipfish)
 
-Maltego handoff for graph-based OSINT
+✅ Maltego Handoff for Graph-based OSINT
 
-⚙️ Requirements
+
+
+---
+
+📦 Requirements
 
 Python: 3.8+
 
-Python packages:
+Install dependencies:
 
 pip install requests dnspython python-whois colorama
 
+External tools (install separately):
 
-External tools (install separately & ensure they’re in PATH):
+nmap, gobuster / dirb, wpscan, nikto, skipfish, maltego
 
-nmap, gobuster (or dirb), wpscan, nikto, skipfish, maltego
 
-Tip: On Debian/Ubuntu:
 
-sudo apt update && sudo apt install -y nmap gobuster nikto
-# WPScan (Ruby):
-sudo gem install wpscan
+
+---
+
+🔧 Installation
+
+git clone https://github.com/rootxvector/BlackFang-.git
+cd BlackFang-
+python3 blackfang.py
+
+
+---
 
 🚀 Usage
 
@@ -54,37 +71,45 @@ Run the toolkit:
 
 python3 blackfang.py
 
+---
 
-Menu:
+📋 Examples
 
-╔══════════════════════════════════════════╗
-║        🐺 BlackFang Recon 🐺             ║
-║     Local OSINT & Security Scanner       ║
-╚══════════════════════════════════════════╝
+Safe Port Scan:
 
-Developer: rootxvector
-Follow: Instagram — @rootxvector
+Select option: 5
+Target host: example.com
+Running nmap...
 
-[1] DNS Records
-[2] WHOIS Lookup
-[3] HTTP Headers
-[4] TLS Snapshot
-[5] Safe Port Scan
-[6] Subdomain Finder
-[7] Directory Bruteforce
-[8] SSL Certificate Analysis
-[9] WPScan
-[10] Nikto
-[11] Skipfish
-[12] Maltego
-[0] Exit
+Subdomain Finder:
 
-🔒 Safety & Ethics
+Select option: 6
+Target: example.com
 
-Designed for authorized security testing and research only.
 
-Respects reasonable rate limits to reduce noise and detection.
+---
 
-Logs are stored locally; review before sharing.
+👤 Developer Info
 
-Legal Disclaimer: Unauthorized scanning or reconnaissance of systems without explicit written permission is illegal. The developer is not responsible for misuse.
+Created by:
+rootxvector
+
+
+---
+
+🛡️ Legal Notice
+
+This tool is intended only for authorized use in penetration testing, education, or red teaming.
+Misuse without consent is strictly prohibited and may violate laws.
+
+
+---
+
+📄 License
+
+This project is licensed under the MIT License.
+
+
+---
+
+❤️ Follow Me
