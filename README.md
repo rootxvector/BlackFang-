@@ -1,4 +1,4 @@
-# BlackFang-🐺 BlackFang Recon
+🐺 BlackFang Recon
 
 Local OSINT & Security Scanner
 
